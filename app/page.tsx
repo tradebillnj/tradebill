@@ -1,4 +1,3 @@
-import WaitlistForm from '@/app/components/WaitlistForm'
 import Image from 'next/image'
 
 const features = [
@@ -160,12 +159,6 @@ export default function Home() {
                 style={{ background: 'linear-gradient(90deg, #fde047, #fb923c)' }}
               >
                 Start Free Trial — 14 Days Free
-              </a>
-              <a
-                href="#waitlist"
-                className="rounded-2xl border border-white/25 bg-white/10 backdrop-blur-sm px-6 py-4 text-white font-semibold text-base hover:bg-white/20 transition-all whitespace-nowrap"
-              >
-                Join the Waitlist
               </a>
             </div>
             <p className="text-sm text-blue-300/70">
@@ -361,9 +354,16 @@ export default function Home() {
               Stop leaving money on the table.
             </h2>
             <p className="text-blue-200 text-lg mb-10 max-w-xl mx-auto text-center">
-              Join the waitlist and be first in line when we launch. Early members get locked-in pricing for life.
+              Start your free 14-day trial today. No credit card required.
             </p>
-            <WaitlistForm />
+            <a
+              href="/signup"
+              className="rounded-2xl px-10 py-4 text-slate-900 font-bold text-lg shadow-xl hover:opacity-90 transition-all"
+              style={{ background: 'linear-gradient(90deg, #fde047, #fb923c)' }}
+            >
+              Start Free Trial — 14 Days Free
+            </a>
+            <p className="mt-4 text-sm text-blue-300/70">No credit card required · $29/month after trial · Cancel anytime</p>
           </div>
         </section>
 
