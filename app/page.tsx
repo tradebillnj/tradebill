@@ -97,9 +97,14 @@ export default function Home() {
             <a href="#pricing" className="hover:text-slate-900 transition-colors">Pricing</a>
             <a href="#founder" className="hover:text-slate-900 transition-colors">About</a>
           </nav>
-          <a href="#waitlist" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm">
-            Join Waitlist
-          </a>
+          <div className="flex items-center gap-3">
+            <a href="/login" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors hidden sm:block">
+              Log in
+            </a>
+            <a href="/signup" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm">
+              Start Free Trial
+            </a>
+          </div>
         </div>
       </header>
 
@@ -148,11 +153,23 @@ export default function Home() {
               No bloat. No $300/month price tags. Just the tools you actually need.
             </p>
 
-            <div className="w-full flex justify-center mb-5" id="waitlist">
-              <WaitlistForm />
+            <div className="flex flex-col sm:flex-row items-center gap-4 mb-5">
+              <a
+                href="/signup"
+                className="rounded-2xl px-8 py-4 text-slate-900 font-bold text-lg shadow-xl hover:opacity-90 active:opacity-100 transition-all whitespace-nowrap"
+                style={{ background: 'linear-gradient(90deg, #fde047, #fb923c)' }}
+              >
+                Start Free Trial — 14 Days Free
+              </a>
+              <a
+                href="#waitlist"
+                className="rounded-2xl border border-white/25 bg-white/10 backdrop-blur-sm px-6 py-4 text-white font-semibold text-base hover:bg-white/20 transition-all whitespace-nowrap"
+              >
+                Join the Waitlist
+              </a>
             </div>
             <p className="text-sm text-blue-300/70">
-              Early access launching soon · $29/month · Cancel anytime
+              No credit card required · $29/month after trial · Cancel anytime
             </p>
           </div>
         </section>
@@ -316,11 +333,11 @@ export default function Home() {
                 ))}
               </ul>
               <a
-                href="#waitlist"
-                className="block w-full rounded-2xl py-4 text-center text-white font-bold text-lg transition-all shadow-lg"
+                href="/signup"
+                className="block w-full rounded-2xl py-4 text-center text-white font-bold text-lg transition-all shadow-lg hover:opacity-90"
                 style={{ background: 'linear-gradient(90deg, #2563eb, #4f46e5)' }}
               >
-                Join the Waitlist — Free
+                Start Free Trial — 14 Days Free
               </a>
             </div>
             <p className="mt-5 text-sm text-slate-400">
